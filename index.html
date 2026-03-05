@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MusicFlix</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1 class="logo">MusicFlix</h1>
+<input type="text" id="search" placeholder="Search music...">
+</header>
+
+<section class="row">
+<h2>Trending</h2>
+
+<div class="music-row">
+
+<div class="card" onclick="playSong('music/song1.mp3')">
+<img src="covers/cover1.jpg">
+<p>Cyber Nights</p>
+</div>
+
+<div class="card" onclick="playSong('music/song2.mp3')">
+<img src="covers/cover2.jpg">
+<p>Dark Pulse</p>
+</div>
+
+<div class="card" onclick="playSong('music/song3.mp3')">
+<img src="covers/cover3.jpg">
+<p>Neon Dreams</p>
+</div>
+
+</div>
+</section>
+
+<section class="row">
+<h2>Electronic</h2>
+
+<div class="music-row">
+
+<div class="card" onclick="playSong('music/song4.mp3')">
+<img src="covers/cover4.jpg">
+<p>Digital Storm</p>
+</div>
+
+<div class="card" onclick="playSong('music/song5.mp3')">
+<img src="covers/cover5.jpg">
+<p>Night Driver</p>
+</div>
+
+</div>
+</section>
+
+<div class="player">
+<audio id="audioPlayer" controls></audio>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
